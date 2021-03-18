@@ -36,7 +36,8 @@ public class SList<E extends Comparable<E>> {
     	t.setNext(null);
     	size--; }
     
-    public int search(E target) { // target을 탐색 Node p = head;
+    public int search(E target) { // target을 탐색 
+	Node p = head;
     	for (int k = 0; k < size ;k++){
     	if (target == p.getItem()) return k;
     	p = p.getNext();
