@@ -29,7 +29,8 @@ public class SList<E extends Comparable<E>> {
     	size--;
     	}
     
-    public void deleteAfter(Node p){ // p가 가리키는 노드의 다음 노드를 삭제 if (p == null) throw new NoSuchElementException();
+    public void deleteAfter(Node p){ // p가 가리키는 노드의 다음 노드를 삭제 
+	if (p == null) throw new NoSuchElementException();
     	Node t = p.getNext();
     	p.setNext(t.getNext());
     	t.setNext(null);
